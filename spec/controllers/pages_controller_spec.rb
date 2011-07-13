@@ -4,7 +4,7 @@ describe PagesController do
   render_views
   
   before(:each) do
-    @base_title = "pakpak - The Ultimate Packing List | "
+    @base_title = "pakpak - The Ultimate Packing List"
   end
 
   describe "GET 'home'" do
@@ -31,7 +31,7 @@ describe PagesController do
       get 'about'
       response.should have_selector("title",
                           :content => 
-                          @base_title + "About") 
+                          @base_title + " | About") 
     end
   end
   

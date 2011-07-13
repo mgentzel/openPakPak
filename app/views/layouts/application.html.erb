@@ -8,7 +8,9 @@
 	<meta name="author" content="Mark Gentzel">
 	<!-- Date: 2011-07-12 -->
 	<%= csrf_meta_tag %>
-</head>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+</head>	
 <body>
 	<%= yield %>
 </body>
