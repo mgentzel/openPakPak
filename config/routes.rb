@@ -1,6 +1,8 @@
 Pakpak::Application.routes.draw do
   
-  get "users/new"
+  resources :users
+  
+  #get "users/new"
 
   match '/signup',  :to => 'users#new'
 
@@ -9,7 +11,7 @@ Pakpak::Application.routes.draw do
   match '/help',    :to => 'pages#help'
 
 
-  resources :users
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
