@@ -7,7 +7,7 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 
-
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
@@ -30,4 +30,5 @@ group :test do
 	gem 'autotest-rails-pure', '4.1.2'
 	gem 'autotest-fsevent', '0.2.4'
 	gem 'autotest-growl', '0.2.9'
+	gem 'factory_girl_rails', '1.0'
 end
